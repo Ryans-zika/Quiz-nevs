@@ -1,2 +1,0 @@
-# Quiz-nevs
-# Quiz-nevs
