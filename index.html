@@ -1,273 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Quiz para o Nevs sobre HTML</title>
-    <meta
-      name="description"
-      content="Um quis interativo para testar as habilidades do nevs"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz sobre Nevs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-      <h1>Quiz para testar as habilididades do nevs</h1>
-      <p>
-        Aqui vou testar as habilidades do meu REAL GLOBIN NEVS sobre sem
-        conhecimentos de HTMLIS yeah bro
-      </p>
+        <h1>Bem-vindo ao Quiz sobre Nevs!</h1>
+        <p>Teste seus conhecimentos sobre Nevs e suas características!</p>
     </header>
-
     <main>
-      <!-- isso foi a minha primeira section, aqui ja aprendi o basico do basico -->
-      <section>
-        <h2>Sobre o quiz</h2>
-
-        <p>
-          Esse quiz foi feito foi feito para ver se ver se os bglh e loco memo!
-          aqui so vai ter coisa basica e erro de digitacao porque meu teclado ta
-          com o layout errado e eu o vscode nao tem corretor ortografico
-          FDSSSSSSS
-        </p>
-
-        <p>
-          aqui eu so botei mais texto aleatorio pq tenho que ficar praticando
-          essa porra de paragrafo desgracado
-        </p>
-
-        <p>
-          eu ainda
-          <strong
-            >nao entendi pq tiver que botar o paragrafo dentro de uma
-            section</strong
-          >
-          mas se pah ela explica.<br />
-          eu nao sei usar pq, agora vou usar um
-          <em>negrito meio bosta pq ela citou no bglh.</em>
-          acabei de testar e percebi que nao e negrito e sim italico mas ela nao
-          explicou direito kkkkkk. <br />
-          Plot twist, ela explicou, mas eu to codando enquanto ela fala pq tenho
-          ansiedade.
-        </p>
-        <p>eu to escrevendo isso porque eu to muito loco</p>
-
-        <p>
-          ela falou que tem a tag i e a tag b que faz a mesma coisa que o strong
-          e o em mas nao explicou porque diabos os devs preferem usar uma tag
-          que tu tem que escrever mais, anyway tambem, agora eu vou quebrar
-          alguams linhas la em cima para tester o br,
-          <abbr
-            title="se voce leu isso voce e um voce e gay KKKKKKKKKKKKKKKKKKKKKK"
-            >aka</abbr
-          >
-          brasil. Eu usei uma tag para abreviar o
-          <abbr
-            title="se voce leu isso voce e um voce e gay KKKKKKKKKKKKKKKKKKKKKK"
-            >aka</abbr
-          >
-          ent deixa o mouse em cima que vai ter a explicacao do que e a essa
-          abreiacao gangster!!!
-        </p>
-      </section>
-
-      <!-- primeira 1 multipla escolha -->
-      <section>
-        <h2>
-          pergunta 1: qual e a linguaguem usada para estruturar paginas web?
-        </h2>
-
-        <form>
-          <input type="radio" value="HTML" id="p1a" name="pergunta1" />
-          <label for="p1a">HTML</label><br />
-
-          <input type="radio" value="Termoquimica" id="p1b" name="pergunta1" />
-          <label for="p1b">Termoquimica</label><br />
-
-          <input type="radio" value="Clash royale" id="p1c" name="pergunta1" />
-          <label for="p1c">Clash royale</label><br />
+        <form id="quiz-form">
+            <h2>Questões do Quiz</h2>
+            <div class="question">
+                <label for="q1">1. O que é Nevs?</label><br>
+                <input type="radio" id="a1" name="q1" value="a"> Alternativa A<br>
+                <input type="radio" id="b1" name="q1" value="b"> Alternativa B<br>
+                <input type="radio" id="c1" name="q1" value="c"> Alternativa C<br>
+            </div>
+            <div class="question">
+                <label for="q2">2. Qual é a capital de Nevs?</label><br>
+                <input type="radio" id="a2" name="q2" value="a"> Alternativa A<br>
+                <input type="radio" id="b2" name="q2" value="b"> Alternativa B<br>
+                <input type="radio" id="c2" name="q2" value="c"> Alternativa C<br>
+            </div>
+            <input type="submit" value="Enviar">
         </form>
-      </section>
-
-      <!-- pergunta 2 digitacao -->
-      <section>
-        <h2>Na URL https:www.google.com o trecho "google.com" e o _____</h2>
-        <form>
-          <input
-            type="text"
-            id="p2"
-            name="pergunta2"
-            placeholder="Digite ai duvido acertar"
-          />
-        </form>
-      </section>
-
-      <!-- pergunta 3 senha -->
-      <section>
-        <h2>Digita a senha do teu banco ai pra ver se ela e boa</h2>
-        <form>
-          <input
-            type="password"
-            id="p3"
-            name="pergunta3"
-            placeholder="digita ai kk"
-          />
-        </form>
-      </section>
-
-      <!-- pergunta 4 data -->
-      <section>
-        <h2>Qual o mes do meu aniversario</h2>
-        <form>
-          <input type="date" id="p4" name="pergunta4" />
-        </form>
-      </section>
-
-      <!-- pergunta 5 selecao multipla -->
-      <section>
-        <h2>
-          quais dessas tecnologias sao consideradas linguens de programação
-        </h2>
-        <form>
-          <input type="checkbox" id="p5a" name="pergunta5" value="Javascript" />
-          <label for="p5a">Javascript</label>
-
-          <input type="checkbox" id="p5b" name="pergunta5" value="Python" />
-          <label for="p5b">Python</label>
-
-          <input type="checkbox" id="p5c" name="pergunta5" value="Git" />
-          <label for="p5c">Git</label>
-        </form>
-      </section>
-
-      <!-- pergunta 6 upload de arquivo -->
-      <section>
-        <h2>Mande um arquivo .html</h2>
-        <form>
-          <input type="file" id="p6" name="pergunta6" />
-        </form>
-      </section>
-
-      <!-- pergunta 7 menu suspenso -->
-      <section>
-        <h2>selecione o atributo do input que define seu tipo:</h2>
-        <form>
-          <select name="pergunta7" id="p7">
-            <option value="id">id</option>
-            <option value="type">type</option>
-            <option value="placeholder">placeholder</option>
-          </select>
-        </form>
-      </section>
-
-      <!-- pergunta 8 responder logotipo -->
-      <section>
-        <h2>
-          pergunta 8, esse logotipo representa qual linguagem de programação
-        </h2>
-        <figure>
-          <img src="./assets/java.png" alt="Logotipo do Java" />
-          <figcaption>Logotipo de uma linguagem de programação</figcaption>
-        </figure>
-
-        <input
-          type="text"
-          id="p8"
-          name="pergunta8"
-          placeholder="qual a linguagem..."
-        />
-      </section>
-
-      <section>
-        <h2>Tabela de pontuação</h2>
-
-        <table border="1">
-          <thead>
-            <tr>
-              <th>pontuação</th>
-              <th>Avaliação</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>0-2</td>
-              <td>Nao desista seu noob, tente de novo</td>
-            </tr>
-            <tr>
-              <td>3-5</td>
-              <td>Ta bom ate</td>
-            </tr>
-            <tr>
-              <td>7-8</td>
-              <td>Boa pnc</td>
-            </tr>
-          </tbody>
-
-          <tfoot>
-            <tr>
-              <td colspan="2">Boa sorte na próxima</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-
-      <!-- verificar respotas -->
-      <section>
-        <h2>verifique suas respotas</h2>
-        <details>
-          <summary>Clique aqui para ver as repostas</summary>
-          <ol>
-            <li>HTML</li>
-            <li>Dominio</li>
-            <li>agdg@#%05356</li>
-            <li>Maio</li>
-            <li>js e py</li>
-            <li>o arquivo deve ter extensão HTML</li>
-            <li>type</li>
-            <li>linguagem java</li>
-          </ol>
-        </details>
-      </section>
-
-      <!-- Formulario de feedback-->
-      <section>
-        <h2>deixa oque tu achou ai</h2>
-        <form>
-          <fieldset>
-            <legend>informações de contato</legend>
-            <label for="name">Nome:</label>
-            <br />
-            <input type="text" id="name" name="name" />
-            <br />
-            <label for="email">email:</label>
-            <br />
-            <input type="text" id="email" name="email" />
-            <br />
-            <label for="comentarios">comentarios:</label>
-            <br />
-            <textarea
-              id="comentarios"
-              name="comentarios"
-              rows="4"
-              cols="50"
-              placeholder="Digita os comentarios"
-            ></textarea>
-            <br />
-            <button onclick="alert('FEEDBACK ENVIADO')">
-              Envie seu feedback
-            </button>
-          </fieldset>
-        </form>
-      </section>
     </main>
-
     <footer>
-      <p>&copy Quiz para o nevs. Todos os direitos reservados a ninguem</p>
-      <p>
-        Para me conhecer melhor
-        <a href="sobremim.html">clique aqui</a>
-      </p>
+        <p>&copy; 2026 Ryans-zika. Todos os direitos reservados.</p>
     </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
